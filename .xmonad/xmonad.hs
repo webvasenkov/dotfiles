@@ -80,13 +80,13 @@ myLayoutHook = smartBorders $ mkToggle (NOBORDERS ?? FULL ?? EOT) $ mySpacing (t
 
 myStartupHook = do 
     spawnOnce "fstrim /"
-    spawnOnce "feh --bg-fill ~/Pictures/wallpapers/0057.jpg"
+    spawnOnce "feh --bg-fill ~/Pictures/wallpapers/0064.jpg"
     spawnOnce "picom --experimental-backends &"
     spawnOnce "xmousepasteblock"
     spawnOnce "xrandr --output eDP-1 --off --output HDMI-1"
     spawnOnce "xcalib ~/.config/hp-x27q-calibration.icm"
 
-myWorkspaces = ["dev", "www", "chill", "fun"]
+myWorkspaces = ["dev", "www", "study", "chill"]
 
 myShowWNameTheme = def 
     { swn_font = "xtf:Hack:bold:size=60"
