@@ -5,12 +5,15 @@ end
 
 local dashboard = require("alpha.themes.dashboard")
 dashboard.section.header.val = {
-[[              ___.                                      __                ]],
-[[ __  _  __ ____\_ |_____  _______    ______ ____   ____ |  | _________  __]],
-[[\ \/ \/ // __ \| __ \  \/ /\__  \  /  ___// __ \ /    \|  |/ /  _ \  \/ / ]],
-[[ \     /\  ___/| \_\ \   /  / __ \_\___ \\  ___/|   |  \    <  <_> )   /  ]],
-[[  \/\_/  \___  >___  /\_/  (____  /____  >\___  >___|  /__|_ \____/ \_/   ]],
-[[             \/    \/           \/     \/     \/     \/     \/            ]],
+[[⠀⠀⠀⠀⠀⠀⠀⠀⡠⠴⠒⠋⠉⠉⠉⠙⠒⠦⣄⡀⠀⠀⠀⠀⠀  ]],
+[[ ⠀⠀⠀⠀⠀⣠⢔⢕⠨⣀⣢⠤⠤⠤⠤⣄⡀⠠⢀⠙⠷⠦⡀⠀⠀⠀]],
+[[ ⠀⠀⢀⡴⢊⡼⣪⢔⣫⣵⣶⣿⣿⣿⡿⠛⢾⣽⣲⢌⡀⠀⠊⠳⣄⠀]],
+[[ ⢀⠔⠋⢀⣿⣿⣶⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⢹⢿⣿⣿⣷⡄⠀⠈⠃]],
+[[ ⠀⠀⣶⡿⠋⠁⠀⠻⡌⠆⠘⠿⣿⣿⣿⣿⢇⠎⡼⠸⠹⠉⣹⠃⡆⠀]],
+[[ ⠀⠚⠿⠶⢤⣀⣀⠀⠈⠢⣄⡀⠀⠀⠀⣰⡡⠊⠀⢀⣴⡾⠃⠀⠀⠀]],
+[[ ⠀⠒⠒⠢⣄⡈⠙⠳⠶⣠⣄⠉⠉⠉⠉⢉⣀⣤⡾⠟⡣⢊⠜⠀⠀⠀]],
+[[ ⠀⠀⠀⣮⣢⣍⠓⠲⠤⢤⣈⣉⠉⠉⠉⠉⣉⣠⠴⢊⢔⡕⠡⠊⠀⠀]],
+[[  ⠀⠀⠀⠀⠈⠉⠀⠀⠀⠀⠲⡬⠟⠋⠉⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀]],
 }
 dashboard.section.buttons.val = {
 	dashboard.button("f", "  Find file", ":Telescope find_files <CR>"),
@@ -28,10 +31,10 @@ local function footer()
 	-- local fortune = handle:read("*a")
 	-- handle:close()
 	-- return fortune
-	return "code or die"
+	-- return "101010"
 end
 
-dashboard.section.footer.val = footer()
+-- dashboard.section.footer.val = footer()
 
 dashboard.section.footer.opts.hl = "Type"
 dashboard.section.header.opts.hl = "Include"
