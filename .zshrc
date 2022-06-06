@@ -30,7 +30,7 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 source /home/vd/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-# custom aliases
+# common aliases
 alias upd="source ~/.zshrc"
 alias ncra="npx create-react-app "
 alias myip="curl http://ipecho.net/plain; echo"
@@ -40,6 +40,8 @@ alias pacupd="sudo pacman -Suy && yay"
 alias ls="exa -al --color=always --group-directories-first"
 alias config='/usr/bin/git --git-dir=$HOME/Dev/dotfiles/ --work-tree=$HOME' # manage dotfiles
 alias eng="firefox https://www.youtube.com/watch\?v\=OV2RDbODPso\&list\=PLYB0SmefqEsniU1UbGzrfhNCV3noALHj7\&index\=152"
+alias bl="bluetoothctl"
+alias dc="docker-compose"
 
 # git aliases
 function gc { git commit -m "$@"; }
@@ -90,3 +92,5 @@ alias esa="expo start --android";
 
 # key binding
 bindkey '^ ' autosuggest-accept;
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
