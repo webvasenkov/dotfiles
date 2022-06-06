@@ -42,8 +42,8 @@ myConfig = def
     { modMask = myModKey
     , terminal  = myTerminal
     , layoutHook = myLayoutHook
-    , normalBorderColor = "#dbc5f9"
-    , focusedBorderColor = "#bd93f9"
+    , normalBorderColor = "#EAFFCC"
+    , focusedBorderColor = "#a7c080"
     , borderWidth = 1
     , handleEventHook = handleEventHook def <+> fullscreenEventHook
     , startupHook = setDefaultCursor xC_left_ptr <+> myStartupHook
@@ -51,7 +51,7 @@ myConfig = def
     }
     `additionalKeysP`
     [ ("M-]", spawn "firefox")
-    , ("M-p", spawn "dmenu_run -fn monospace:bold:size=10 -nb '#1e2029' -sf '#bd93f9' -sb '#1e2029' -nf '#f1f1f0'")
+    , ("M-p", spawn "dmenu_run -fn monospace:bold:size=10 -nb '#2b3339' -sf '#dbbc7f' -sb '#2b3339' -nf '#d3c6aa'")
     , ("M-<Return>", spawn "alacritty")
     , ("M-f", sendMessage (Toggle FULL) >> sendMessage ToggleStruts)
     , ("<Print>", spawn "scrot -q 100")
@@ -81,10 +81,10 @@ myLayoutHook = smartBorders $ mkToggle (NOBORDERS ?? FULL ?? EOT) $ mySpacing (t
 myStartupHook = do 
     spawnOnce "ibt=off"
     spawnOnce "fstrim /"
-    spawnOnce "feh --bg-fill ~/Pictures/wallpapers/0064.jpg"
+    spawnOnce "feh --bg-fill ~/Pictures/wallpapers/0065.jpg"
     spawnOnce "picom --experimental-backends &"
     spawnOnce "xmousepasteblock"
-    spawnOnce "xrandr --output eDP-1 {- --off --output HDMI-1 -}"
+    spawnOnce "xrandr --output eDP-1 --off --output HDMI-1"
     spawnOnce "xcalib ~/.config/hp-x27q-calibration.icm"
 
 myWorkspaces = ["dev", "www", "study", "fun"]
