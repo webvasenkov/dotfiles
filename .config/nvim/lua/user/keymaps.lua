@@ -31,8 +31,8 @@ keymap("n", "<C-Left>", ":vertical resize -2<CR>", opts)
 keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 
 -- Add enter
-keymap("n", "oo", "o <Esc>k", opts)
-keymap("n", "OO", "O <Esc>j", opts)
+keymap("n", "oo", "o <Esc>", opts)
+keymap("n", "OO", "O <Esc>", opts)
 
 -- Navigate buffers
 keymap("n", "<S-l>", ":bnext<CR>", opts)

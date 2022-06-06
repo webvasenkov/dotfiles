@@ -124,6 +124,11 @@ _G.packer_plugins = {
     path = "/home/vd/.local/share/nvim/site/pack/packer/start/dracula",
     url = "https://github.com/dracula/vim"
   },
+  everforest = {
+    loaded = true,
+    path = "/home/vd/.local/share/nvim/site/pack/packer/start/everforest",
+    url = "https://github.com/sainnhe/everforest"
+  },
   ["friendly-snippets"] = {
     loaded = true,
     path = "/home/vd/.local/share/nvim/site/pack/packer/start/friendly-snippets",
@@ -133,6 +138,16 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/vd/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
     url = "https://github.com/lewis6991/gitsigns.nvim"
+  },
+  gruvbox = {
+    loaded = true,
+    path = "/home/vd/.local/share/nvim/site/pack/packer/start/gruvbox",
+    url = "https://github.com/morhetz/gruvbox"
+  },
+  hotdog = {
+    loaded = true,
+    path = "/home/vd/.local/share/nvim/site/pack/packer/start/hotdog",
+    url = "https://github.com/tckmn/hotdog.vim"
   },
   ["impatient.nvim"] = {
     loaded = true,
@@ -199,6 +214,11 @@ _G.packer_plugins = {
     path = "/home/vd/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
     url = "https://github.com/kyazdani42/nvim-web-devicons"
   },
+  onedark = {
+    loaded = true,
+    path = "/home/vd/.local/share/nvim/site/pack/packer/start/onedark",
+    url = "https://github.com/joshdick/onedark.vim"
+  },
   ["packer.nvim"] = {
     loaded = true,
     path = "/home/vd/.local/share/nvim/site/pack/packer/start/packer.nvim",
@@ -218,6 +238,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/vd/.local/share/nvim/site/pack/packer/start/project.nvim",
     url = "https://github.com/ahmedkhalf/project.nvim"
+  },
+  ["stylua-nvim"] = {
+    loaded = true,
+    path = "/home/vd/.local/share/nvim/site/pack/packer/start/stylua-nvim",
+    url = "https://github.com/ckipp01/stylua-nvim"
   },
   ["telescope-media-files.nvim"] = {
     loaded = true,

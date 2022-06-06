@@ -120,12 +120,6 @@ cmp.setup {
     select = false,
   },
   
-  window = {
-    documentation = {
-      border = { "╭", "─", "╮", "│", "╯", "─", "╰", "│" },
-    }
-  },
-  
   experimental = {
     ghost_text = false,
     native_menu = false,
