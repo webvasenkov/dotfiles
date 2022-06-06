@@ -3,18 +3,18 @@ Config { font = "xft:Source Code Pro:pixelsize=11:weight=bold:antialias=true:hin
                            , "xft:Font Awesome 5 Free Solid:pixelsize=12"
                            , "xft:Font Awesome 5 Brands:pixelsize=12"
                            ]
-       , bgColor = "#1e2029"
-       , fgColor = "#f1f1f0"
+       , bgColor = "#2b3339"
+       , fgColor = "#d3c6aa"
        , position = Top
        , lowerOnStart = True
        , persistent = True
        , allDesktops = True
        , hideOnStart = False
        , iconRoot = "."
-       , commands = [ Run Cpu ["-t","<fc=#bd93f9><fn=2>\xf100</fn> CPU: <total>%</fc>","-H","75","--high","#ff5555"] 20
-                    , Run Memory ["-t","<fc=#50fa7b><fn=2>\xf233</fn> MEM: <used>M/<usedratio>%</fc>"] 20
-                    , Run DiskU [("/","<fc=#f1fa8c><fn=2>\xf0c7</fn> SSD: <free></fc>")] [] 60
-                    , Run Date "<fc=#ff79c6><fn=2>\xf017</fn> %B %d - %I:%M %p</fc>" "date" 10
+       , commands = [ Run Cpu ["-t","<fc=#e67e80><fn=2>\xf100</fn> CPU: <total>%</fc>","-H","75","--high","#ff5555"] 20
+                    , Run Memory ["-t","<fc=#a7c080><fn=2>\xf233</fn> MEM: <used>M/<usedratio>%</fc>"] 20
+                    , Run DiskU [("/","<fc=#dbbc7f><fn=2>\xf0c7</fn> SSD: <free></fc>")] [] 60
+                    , Run Date "<fc=#7fbbb3><fn=2>\xf017</fn> %B %d - %I:%M %p</fc>" "date" 10
                     , Run UnsafeStdinReader
                     ]
        , sepChar = "%"
