@@ -80,7 +80,7 @@ local opts = {
 local mappings = {
   ["a"] = { "<cmd>Alpha<cr>", "Alpha" },
   ["b"] = {
-    "<cmd>lua require('telescope.builtin').buffers(require('telescope.themes').get_dropdown({initial_mode=insert, borderchars = { '─', '│', '─', '│', '┌', '┐', '┘', '└'}, previewer = false}))<cr>",
+    "<cmd>Telescope buffers<cr>",
     "Buffers",
   },
   ["e"] = { "<cmd>NvimTreeToggle<cr>", "Explorer" },
@@ -89,11 +89,11 @@ local mappings = {
   ["c"] = { "<cmd>Bdelete!<CR>", "Close Buffer" },
   ["h"] = { "<cmd>nohlsearch<CR>", "No Highlight" },
   ["f"] = {
-    "<cmd>lua require('telescope.builtin').find_files(require('telescope.themes').get_dropdown({initial_mode=insert, borderchars = { '─', '│', '─', '│', '┌', '┐', '┘', '└'}, previewer = false}))<cr>",
+    "<cmd>Telescope find_files<cr>",
     "Find files",
   },
-  ["F"] = { "<cmd>lua require'telescope.builtin'.live_grep(require('telescope.themes').get_dropdown({initial_mode=insert, borderchars = { '─', '│', '─', '│', '┌', '┐', '┘', '└'}})) <cr>", "Find Text" },
-  ["P"] = { "<cmd>lua require('telescope').extensions.projects.projects()<cr>", "Projects" },
+  ["F"] = { "<cmd>Telescope live_grep<cr>", "Find Text" },
+  ["P"] = { "<cmd>Telescope projects<cr>", "Projects" },
 
   p = {
     name = "Packer",
@@ -164,7 +164,7 @@ local mappings = {
     c = { "<cmd>Telescope colorscheme<cr>", "Colorscheme" },
     h = { "<cmd>Telescope help_tags<cr>", "Find Help" },
     M = { "<cmd>Telescope man_pages<cr>", "Man Pages" },
-    r = { "<cmd>Telescope oldfiles<cr>", "Open Recent File" },
+    r = { "<cmd>Telescope oldfiles initial_mode=insert borderchars={'─', '│', '─', '│', '┌', '┐', '┘', '└'}<cr>", "Open Recent File" },
     R = { "<cmd>Telescope registers<cr>", "Registers" },
     k = { "<cmd>Telescope keymaps<cr>", "Keymaps" },
     C = { "<cmd>Telescope commands<cr>", "Commands" },
