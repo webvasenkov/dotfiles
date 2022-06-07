@@ -79,13 +79,12 @@ myLayoutHook = smartBorders $ mkToggle (NOBORDERS ?? FULL ?? EOT) $ mySpacing (t
      delta   = 3/100
 
 myStartupHook = do 
+    spawnOnce "feh --bg-fill ~/Pictures/wallpapers/0065.jpg"
+    spawnOnce "xcalib ~/.config/hp-x27q-calibration.icm"
     spawnOnce "ibt=off"
     spawnOnce "fstrim /"
-    spawnOnce "feh --bg-fill ~/Pictures/wallpapers/0065.jpg"
     spawnOnce "picom --experimental-backends &"
     spawnOnce "xmousepasteblock"
-    spawnOnce "xrandr --output eDP-1 --off --output HDMI-1"
-    spawnOnce "xcalib ~/.config/hp-x27q-calibration.icm"
 
 myWorkspaces = ["dev", "www", "study", "fun"]
 
