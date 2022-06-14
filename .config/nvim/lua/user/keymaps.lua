@@ -63,9 +63,6 @@ keymap("x", "K", ":move '<-2<CR>gv-gv", opts)
 keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 keymap("x", "<A-j>", ":move '>+1<CR>gv-gv", opts)
 
--- Fortmatting
-keymap("n", "<leader>d",":Format<CR> :w<CR>", opts)
-
 -- Telescope
 keymap("n", "<leader>sm", ":Telescope media_files<CR>", opts)
 
@@ -75,5 +72,3 @@ keymap("n", "<leader>sm", ":Telescope media_files<CR>", opts)
 -- keymap("t", "<C-j>", "<C-\\><C-N><C-w>j", term_opts)
 -- keymap("t", "<C-k>", "<C-\\><C-N><C-w>k", term_opts)
 -- keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
-
-

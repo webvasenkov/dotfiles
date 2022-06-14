@@ -79,8 +79,8 @@ myLayoutHook = smartBorders $ mkToggle (NOBORDERS ?? FULL ?? EOT) $ mySpacing (t
      delta   = 3/100
 
 myStartupHook = do 
+    spawnOnce "bash ~/.config/toggle-external-monitor.sh"
     spawnOnce "feh --bg-fill ~/Pictures/wallpapers/0065.jpg"
-    spawnOnce "xcalib ~/.config/hp-x27q-calibration.icm"
     spawnOnce "ibt=off"
     spawnOnce "fstrim /"
     spawnOnce "picom --experimental-backends &"

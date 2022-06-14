@@ -10,12 +10,12 @@ local diagnostic = null_ls.builtins.diagnostics
 -- local diagnostics = null_ls.builtins.diagnostics
 
 null_ls.setup({
-	debug = false,
+	debug = true,
 	sources = {
 		formatting.prettier.with({ extra_args = { "--single-quote", "--jsx-single-quote", "--bracket-same-line" } }), -- js, html, etc. formatter
 		formatting.black.with({ extra_args = { "--fast" } }), -- python formatter
 		formatting.stylua,
 		diagnostic.hadolint, -- dockerfile
-    -- diagnostics.eslint
+		-- diagnostic.eslint,
 	},
 })
