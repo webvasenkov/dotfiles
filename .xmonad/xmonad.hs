@@ -80,7 +80,6 @@ myLayoutHook = smartBorders $ mkToggle (NOBORDERS ?? FULL ?? EOT) $ mySpacing (t
 
 myStartupHook = do 
     spawnOnce "bash ~/.config/toggle-external-monitor.sh"
-    spawnOnce "feh --bg-fill ~/Pictures/wallpapers/0065.jpg"
     spawnOnce "ibt=off"
     spawnOnce "fstrim /"
     spawnOnce "picom --experimental-backends &"
