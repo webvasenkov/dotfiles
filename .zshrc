@@ -36,13 +36,18 @@ alias ncra="npx create-react-app "
 alias myip="curl http://ipecho.net/plain; echo"
 alias cl="clear"
 alias md="mkdir "
+alias t="touch "
 alias pacupd="sudo pacman -Suy && yay"
 alias ls="exa -al --color=always --group-directories-first"
 alias config='/usr/bin/git --git-dir=$HOME/Dev/dotfiles/ --work-tree=$HOME' # manage dotfiles
 alias eng="firefox https://www.youtube.com/watch\?v\=OV2RDbODPso\&list\=PLYB0SmefqEsniU1UbGzrfhNCV3noALHj7\&index\=152"
-alias bl="bluetoothctl"
 alias dc="docker-compose"
 
+# bluetooth
+alias bl="bluetoothctl"
+alias br="bl power on && bl connect 6C:D3:EE:20:C6:78"
+alias bj="bl power on && bl connect 70:99:1C:57:7B:A3"
+ 
 # git aliases
 function gc { git commit -m "$@"; }
 alias gclone="git clone";

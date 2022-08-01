@@ -52,42 +52,39 @@
 #     cyan:    '0x59dffc'
 #     white:   '0xe6e6d1'
 colors:
-    primary:
-      background: '#323d43'
-      foreground: '#d3c6aa'
-    normal:
-      black:   '#4b565c'
-      red:     '#e67e80'
-      green:   '#a7c080'
-      yellow:  '#dbbc7f'
-      blue:    '#7fbbb3'
-      magenta: '#d699b6'
-      cyan:    '#83c092'
-      white:   '#d3c6aa'
-    bright:
-      black:   '#4b565c'
-      red:     '#e67e80'
-      green:   '#a7c080'
-      yellow:  '#dbbc7f'
-      blue:    '#7fbbb3'
-      magenta: '#d699b6'
-      cyan:    '#83c092'
-      white:   '#d3c6aa'   
-   
+  primary:
+    background: '#323d43'
+    foreground: '#d3c6aa'
+  normal:
+    black: '#4b565c'
+    red: '#e67e80'
+    green: '#a7c080'
+    yellow: '#dbbc7f'
+    blue: '#7fbbb3'
+    magenta: '#d699b6'
+    cyan: '#83c092'
+    white: '#d3c6aa'
+  bright:
+    black: '#4b565c'
+    red: '#e67e80'
+    green: '#a7c080'
+    yellow: '#dbbc7f'
+    blue: '#7fbbb3'
+    magenta: '#d699b6'
+    cyan: '#83c092'
+    white: '#d3c6aa'
+
 font:
   light:
     family: Source Code Pro
     style: Light
-
   normal:
     family: Source Code Pro
     style: Regular
-
-  bold: 
+  bold:
     family: Source Code Pro
     style: Bold
-
-  italic: 
+  italic:
     family: Source Code Pro
     style: Italic
   size: 10
@@ -98,9 +95,8 @@ font:
     x: 0
     y: 0
 window:
-  opacity: 0.8
-padding:
-  x: 3
-  y: 3
+  padding:
+    x: 5
+    y: 5
 env:
-  LC_ALL: "en_US.UTF-8"
+  LC_ALL: 'en_US.UTF-8'

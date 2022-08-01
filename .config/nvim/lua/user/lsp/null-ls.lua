@@ -18,6 +18,10 @@ null_ls.setup({
 		formatting.black.with({ extra_args = { "--fast" } }), -- python formatter
 		formatting.stylua,
 		formatting.prismaFmt,
+		formatting.goimports,
+		formatting.gofmt,
+		formatting.golines,
+		formatting.prismaFmt,
 		diagnostic.hadolint, -- dockerfile
 		-- diagnostic.eslint,
 	},

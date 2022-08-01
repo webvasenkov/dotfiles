@@ -36,7 +36,7 @@ myTerminal = "alacritty"
 
 main :: IO ()
 main = xmonad
-     . ewmh  =<< statusBar "xmobar ~/.config/xmobar/xmobarrc" def toggleStrutsKey myConfig
+     . ewmh =<< statusBar "xmobar ~/.config/xmobar/xmobarrc"  def toggleStrutsKey myConfig
   where
 myConfig = def
     { modMask = myModKey
@@ -45,16 +45,16 @@ myConfig = def
     , normalBorderColor = "#EAFFCC"
     , focusedBorderColor = "#a7c080"
     , borderWidth = 1
-    , handleEventHook = handleEventHook def <+> fullscreenEventHook
     , startupHook = setDefaultCursor xC_left_ptr <+> myStartupHook
     , workspaces = myWorkspaces
     }
     `additionalKeysP`
     [ ("M-]", spawn "firefox")
     , ("M-p", spawn "dmenu_run -fn monospace:bold:size=10 -nb '#2b3339' -sf '#dbbc7f' -sb '#2b3339' -nf '#d3c6aa'")
+    , ("M-e", spawn "pcmanfm")
     , ("M-<Return>", spawn "alacritty")
     , ("M-f", sendMessage (Toggle FULL) >> sendMessage ToggleStruts)
-    , ("<Print>", spawn "scrot -q 100")
+    , ("M-s", spawn "flameshot gui")
     , ("M-.", nextScreen)
     , ("M-,", prevScreen)
     ]
