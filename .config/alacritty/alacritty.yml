@@ -98,5 +98,6 @@ window:
   padding:
     x: 5
     y: 5
+  # opacity: 0.8
 env:
   LC_ALL: 'en_US.UTF-8'

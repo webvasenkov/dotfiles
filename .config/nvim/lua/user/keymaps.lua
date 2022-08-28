@@ -66,6 +66,9 @@ keymap("x", "<A-j>", ":move '>+1<CR>gv-gv", opts)
 -- Telescope
 keymap("n", "<leader>sm", ":Telescope media_files<CR>", opts)
 
+-- Nvim tree
+keymap("n", "<leader>H", ":NvimTreeCollapse<CR>", opts)
+
 -- Terminal --
 -- Better terminal navigation
 -- keymap("t", "<C-h>", "<C-\\><C-N><C-w>h", term_opts)
