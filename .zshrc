@@ -41,7 +41,10 @@ alias pacupd="sudo pacman -Suy && yay"
 alias ls="exa -al --color=always --group-directories-first"
 alias config='/usr/bin/git --git-dir=$HOME/Dev/dotfiles/ --work-tree=$HOME' # manage dotfiles
 alias eng="firefox https://www.youtube.com/watch\?v\=OV2RDbODPso\&list\=PLYB0SmefqEsniU1UbGzrfhNCV3noALHj7\&index\=152"
+
+# docker aliases
 alias dc="docker-compose"
+alias dclear="docker container rm -f $(docker container ls -qa); docker image rm -f $(docker image ls -q)"
 
 # bluetooth
 alias bl="bluetoothctl"
