@@ -27,6 +27,8 @@ plugins=(
   z
 )
 
+# color for zsh=autosuggestions
+
 source $ZSH/oh-my-zsh.sh
 source /home/vd/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
@@ -44,7 +46,7 @@ alias eng="firefox https://www.youtube.com/watch\?v\=OV2RDbODPso\&list\=PLYB0Sme
 
 # docker aliases
 alias dc="docker-compose"
-alias dclear="docker container rm -f $(docker container ls -qa); docker image rm -f $(docker image ls -q)"
+alias dclear="docker container rm -f $(docker container ls -qa) && docker image rm -f $(docker image ls -q)"
 
 # bluetooth
 alias bl="bluetoothctl"

@@ -21,7 +21,7 @@ try
   let g:everforest_background = 'soft'
   " For better performance
   let g:everforest_better_performance = 1
-  let g:everforest_transparent_background = 1
+  let g:everforest_transparent_background = 2
   colorscheme everforest
 catch /^Vim\%((\a\+)\)\=:E185/
   colorscheme default
