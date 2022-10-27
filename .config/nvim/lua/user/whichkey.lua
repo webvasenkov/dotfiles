@@ -92,7 +92,7 @@ local mappings = {
 		"<cmd>Telescope find_files<cr>",
 		"Find files",
 	},
-	["j"] = { "<cmd>lua vim.lsp.buf.formatting()<cr>", "Format" },
+	["j"] = { "<cmd>lua vim.lsp.buf.format()<cr>", "Format" },
 	["F"] = { "<cmd>Telescope live_grep<cr>", "Find Text" },
 	["P"] = { "<cmd>Telescope projects<cr>", "Projects" },
 

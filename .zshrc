@@ -50,7 +50,7 @@ alias dclear="docker container rm -f $(docker container ls -qa) && docker image 
 
 # bluetooth
 alias bl="bluetoothctl"
-alias br="bl power on && bl connect 6C:D3:EE:20:C6:78"
+alias br="bl power on && bl connect 6C:D3:EE:0B:D6:E0"
 alias bj="bl power on && bl connect 70:99:1C:57:7B:A3"
  
 # git aliases
@@ -104,3 +104,5 @@ alias esa="expo start --android";
 bindkey '^ ' autosuggest-accept;
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=#777777'
