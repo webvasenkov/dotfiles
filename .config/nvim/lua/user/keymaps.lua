@@ -59,3 +59,7 @@ keymap("n", "<leader>sm", ":Telescope media_files<CR>", opts)
 
 -- Nvim tree
 keymap("n", "<leader>H", ":NvimTreeCollapse<CR>", opts)
+
+-- Vertical movements
+keymap("n", "<C-d>", "<C-d>zz", opts)
+keymap("n", "<C-u>", "<C-u>zz", opts)

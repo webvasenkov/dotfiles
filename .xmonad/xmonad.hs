@@ -85,7 +85,7 @@ myStartupHook = do
     spawnOnce "picom --experimental-backends &"
     spawnOnce "xmousepasteblock"
 
-myWorkspaces = ["dev", "www", "study", "fun"]
+myWorkspaces = ["dev", "www", "study", "chat", "fun"]
 
 myShowWNameTheme = def 
     { swn_font = "xtf:Hack:bold:size=60"
