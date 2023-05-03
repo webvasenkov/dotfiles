@@ -1,7 +1,7 @@
-Config { font = "xft:Source Code Pro:pixelsize=11:weight=bold:antialias=true:hinting=true"
-       , additionalFonts = [ "xft:Mononoki Nerd Font:pixelsize=11:antialias=true:hinting=true" 
-                           , "xft:Font Awesome 5 Free Solid:pixelsize=12"
-                           , "xft:Font Awesome 5 Brands:pixelsize=12"
+Config { font = "Source Code Pro Bold 11"
+       , additionalFonts = [ "Mononoki Nerd Font 11" 
+                           , "Font Awesome 5 Free Solid 12"
+                           , "Font Awesome 5 Brands 12"
                            ]
        , bgColor = "#2b3339"
        , fgColor = "#d3c6aa"

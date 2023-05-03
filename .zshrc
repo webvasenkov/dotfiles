@@ -28,7 +28,6 @@ plugins=(
 )
 
 # color for zsh=autosuggestions
-
 source $ZSH/oh-my-zsh.sh
 source /home/vd/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
