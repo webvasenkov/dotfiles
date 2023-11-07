@@ -42,7 +42,7 @@ myConfig = def
     { modMask = myModKey
     , terminal  = myTerminal
     , layoutHook = myLayoutHook
-    , normalBorderColor = "#808c8a"
+    , normalBorderColor = "#323d43"
     , focusedBorderColor = "#7fbbb3"
     , borderWidth = 1
     , startupHook = setDefaultCursor xC_left_ptr <+> myStartupHook
@@ -50,7 +50,7 @@ myConfig = def
     }
     `additionalKeysP`
     [ ("M-]", spawn "firefox")
-    , ("M-p", spawn "dmenu_run -fn monospace:bold:size=10 -nb '#2b3339' -sf '#dbbc7f' -sb '#2b3339' -nf '#d3c6aa'")
+    , ("M-p", spawn "dmenu_run -b -fn monospace:bold:size=11 -nb '#323d43' -sf '#7fbbb3' -sb '#323d43' -nf '#d3c6aa'")
     , ("M-e", spawn "pcmanfm")
     , ("M-<Return>", spawn "alacritty")
     , ("M-f", sendMessage (Toggle FULL) >> sendMessage ToggleStruts)

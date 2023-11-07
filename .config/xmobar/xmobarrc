@@ -3,9 +3,9 @@ Config { font = "Source Code Pro Bold 11"
                            , "Font Awesome 5 Free Solid 12"
                            , "Font Awesome 5 Brands 12"
                            ]
-       , bgColor = "#2b3339"
+       , bgColor = "#323d43"
        , fgColor = "#d3c6aa"
-       , position = Top
+       , position = Static { xpos = 8 , ypos = 8, width = 2544, height = 24 }
        , lowerOnStart = True
        , persistent = True
        , allDesktops = True

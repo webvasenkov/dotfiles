@@ -51,6 +51,7 @@
 #     magenta: '0xff46b0'
 #     cyan:    '0x59dffc'
 #     white:   '0xe6e6d1'
+# forest theme
 colors:
   primary:
     background: '#323d43'
@@ -98,6 +99,6 @@ window:
   padding:
     x: 5
     y: 5
-  opacity: 0.8
+  opacity: 0.7
 env:
   LC_ALL: 'en_US.UTF-8'
