@@ -60,7 +60,8 @@ return packer.startup(function(use)
 	use("prisma/vim-prisma")
 	use("folke/which-key.nvim")
 	-- Colorschemes
-	use({ "sainnhe/everforest", as = "everforest" })
+	--[[ use({ "sainnhe/everforest", as = "everforest" }) ]]
+	use({ "rose-pine/neovim", as = "rose-pine" })
 
 	-- cmp plugins
 	use("hrsh7th/nvim-cmp") -- The completion plugin

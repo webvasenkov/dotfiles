@@ -42,6 +42,7 @@ alias pacupd="sudo pacman -Suy && yay"
 alias ls="exa -al --color=always --group-directories-first"
 alias config='/usr/bin/git --git-dir=$HOME/Dev/dotfiles/ --work-tree=$HOME' # manage dotfiles
 alias eng="firefox https://www.youtube.com/watch\?v\=OV2RDbODPso\&list\=PLYB0SmefqEsniU1UbGzrfhNCV3noALHj7\&index\=152"
+alias fm="pcmanfm"
 
 # docker aliases
 alias dc="docker-compose"
@@ -105,3 +106,10 @@ bindkey '^ ' autosuggest-accept;
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=#777777'
+
+# bun completions
+[ -s "/home/vd/.bun/_bun" ] && source "/home/vd/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"

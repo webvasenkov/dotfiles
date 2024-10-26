@@ -43,14 +43,14 @@ myConfig = def
     , terminal  = myTerminal
     , layoutHook = myLayoutHook
     , normalBorderColor = "#323d43"
-    , focusedBorderColor = "#7fbbb3"
+    , focusedBorderColor = "#eb6f92"
     , borderWidth = 1
     , startupHook = setDefaultCursor xC_left_ptr <+> myStartupHook
     , workspaces = myWorkspaces
     }
     `additionalKeysP`
     [ ("M-]", spawn "firefox")
-    , ("M-p", spawn "dmenu_run -b -fn monospace:bold:size=11 -nb '#323d43' -sf '#7fbbb3' -sb '#323d43' -nf '#d3c6aa'")
+    , ("M-p", spawn "dmenu_run -b -fn monospace:bold:size=11 -nb '#191724' -sf '#eb6f92' -sb '#191724' -nf '#e0def4'")
     , ("M-e", spawn "pcmanfm")
     , ("M-<Return>", spawn "alacritty")
     , ("M-f", sendMessage (Toggle FULL) >> sendMessage ToggleStruts)
@@ -85,7 +85,7 @@ myStartupHook = do
     spawnOnce "picom --experimental-backends &"
     spawnOnce "xmousepasteblock"
 
-myWorkspaces = ["dev", "www", "study", "chat", "fun"]
+myWorkspaces = ["www", "dev", "design", "chat", "fun"]
 
 myShowWNameTheme = def 
     { swn_font = "xtf:Hack:bold:size=60"
